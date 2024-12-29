@@ -3,7 +3,7 @@ Description=My Python Script
 After=network.target
 
 [Service]
-ExecStart=python3.12 /root/Personal_AI_TG_bot/main.py
+ExecStart=python3.12 /root/Personal_AI_TG_bot/main.py &
 WorkingDirectory=/root/Personal_AI_TG_bot/
 User=root
 Restart=on-failure
