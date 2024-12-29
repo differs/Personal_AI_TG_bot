@@ -1,1 +1,9 @@
+[Unit]
+   Description=My Python Script in Conda Environment
+   After=network.target
 
+[Service]
+   ExecStart= conda activate deepseek && python3 /root/Personal_AI_TG_bot/main.py
+   Restart=always
+[Install]
+   WantedBy=multi-user.target
