@@ -8,8 +8,6 @@ import os
 load_dotenv()
 #"https://api.deepseek.com/v1",
 
-
-
 # Инициализация клиента API OpenAI с вашим API ключом из config.py
 client = OpenAI(
     api_key=os.getenv("API_KEY"),
