@@ -8,6 +8,10 @@ WorkingDirectory=/root/Personal_AI_TG_bot/
 User=root
 Restart=on-failure
 RestartSec=5
+EnvironmentFile=/root/Personal_AI_TG_bot/.env
+StandardOutput=append:/root/Personal_AI_TG_bot/logfile.log
+StandardError=append:/root/Personal_AI_TG_bot/error.log
+
 
 [Install]
 WantedBy=multi-user.target
