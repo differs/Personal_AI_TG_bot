@@ -14,7 +14,7 @@ client = OpenAI(
 )
 
 # Инициализация бота Telegram с вашим токеном из config.py
-bot = telebot.TeleBot(os.getenv(TELEGRAM_TOKEN))
+bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
 
 # Список для хранения истории разговора
 conversation_history = []
