@@ -1,6 +1,5 @@
 from openai import OpenAI
 import telebot
-import config
 from dotenv import load_dotenv
 import os
 
@@ -15,7 +14,7 @@ client = OpenAI(
 )
 
 # Инициализация бота Telegram с вашим токеном из config.py
-bot = telebot.TeleBot(config.telegram_bot_token)
+bot = telebot.TeleBot(os.getenv(TELEGRAM_TOKEN)
 
 # Список для хранения истории разговора
 conversation_history = []
