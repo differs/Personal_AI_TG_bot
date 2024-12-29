@@ -6,12 +6,14 @@ import os
 
 # 加载 .env 文件
 load_dotenv()
+#"https://api.deepseek.com/v1",
+
 
 
 # Инициализация клиента API OpenAI с вашим API ключом из config.py
 client = OpenAI(
-    api_key=config.deepseek_api_key,
-    base_url="https://api.deepseek.com/v1",
+    api_key=os.getenv("API_KEY"),
+    base_url=os.getenv("API_URL"),
 )
 
 # Инициализация бота Telegram с вашим токеном из config.py
