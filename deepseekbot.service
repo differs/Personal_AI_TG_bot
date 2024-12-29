@@ -1,9 +1,13 @@
 [Unit]
-   Description=My Python Script in Conda Environment
-   After=network.target
+Description=My Python Script
+After=network.target
 
 [Service]
-   ExecStart= /root/Personal_AI_TG_bot/run.sh
-   Restart=always
+ExecStart=/usr/bin/python3 /root/Personal_AI_TG_bot/main.py
+WorkingDirectory=/root/Personal_AI_TG_bot
+User=root
+Restart=on-failure
+RestartSec=5
+
 [Install]
-   WantedBy=multi-user.target
+WantedBy=multi-user.target
