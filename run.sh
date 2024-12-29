@@ -1,2 +1,2 @@
 #!/bin/bash
-conda init && conda activate deepseek && python3 /root/Personal_AI_TG_bot/main.py
+cd /root/Personal_AI_TG_bot && python3 main.py
