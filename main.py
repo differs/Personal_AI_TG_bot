@@ -1,6 +1,12 @@
 from openai import OpenAI
 import telebot
 import config
+from dotenv import load_dotenv
+import os
+
+# 加载 .env 文件
+load_dotenv()
+
 
 # Инициализация клиента API OpenAI с вашим API ключом из config.py
 client = OpenAI(
